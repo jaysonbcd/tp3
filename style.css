@@ -1,21 +1,82 @@
-li{
-     background-color: #088A85;
-  display: inline-block;
-  text-align : center;
-  margin-left : auto;
-  margin-right : auto;
-  vertical-align: middle ;
+body {
+  background-color: #fcfcfc;
 }
-ul{
-  padding: 0;
-  margin : 0;
-  font-family: "Veranda", sans-serif;
-  font-size: 10px;
-    background: #088A85;
-  height: 100px;
+
+.menu {
+  font-family: "Verdana" ,sans-serif;
+  font-size: 20px;
+  background: #40A497;
+	padding:30px;
 }
-a: hover {
-  color: #FFFFFF;
-  pading-bottom : 10px;
-  border-bottom: solid 
+
+ul {
+	margin: auto;
+  background-color: #40A497;
+  text-align:center;
+}
+
+li {
+	  display:inline-block;
+	  list-style-type: none;
+}
+
+.menu a:link, .menu a:visited {
+	color: #FFFFFF;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-decoration:none;
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.menu a:hover {
+	color: #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+}
+
+
+
+li:first-child {
+  background-color: #40A497;
+  float:right;
+	text-align: left; 
+  border: 1px #FFF solid;
+  border-radius: 5px 5px 5px 5px;
+
+  margin-right:150px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+body {
+  background-color: #fcfcfc;
+  
+}
+
+.menu {
+  font-family: "Verdana" ,sans-serif;
+  font-size: 20px;
+  background: #40A497;
+	padding:30px;
+  text-align: center;
+}
+	li {
+		display:block;	
+		text-align:center;
+	}
+
+li:first-child {
+     vertical-align: center;
+   background-color: #40A497;
+  float:center;
+	text-align: center; 
+  border: 1px #FFF solid;
+  border-radius: 5px 5px 5px 5px;
+
+}
 }
